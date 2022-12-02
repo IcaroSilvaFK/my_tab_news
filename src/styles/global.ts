@@ -32,4 +32,10 @@ export const GlobalStyle = createGlobalStyle`
   ul,ol{
     list-style: none;
   }
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+    line-height: 0;
+  }
 `

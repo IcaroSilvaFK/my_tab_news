@@ -5,3 +5,9 @@ export async function newsContents() {
 
   return data
 }
+
+export async function newContent<T>(path: string): Promise<T> {
+  const { data } = await tabNewsApi.get(`contents${path}`)
+
+  return data
+}
